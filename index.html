@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diagnostic Braid — defensive publication, 8 January 2026</title>
+<meta name="description" content="Health issues as misalignment between structure, flow and control. Published 8 January 2026 as prior art. Public domain / CC0 (concept).">
+<style>
+ :root{--bg:#fbfaf7;--panel:#fff;--line:#e0dcd3;--ink:#23211d;--dim:#5f5a52;--faint:#8d867b;
+   --seal:#7a5c2e;--accent:#2f5d50;
+   --serif:Iowan Old Style,Palatino Linotype,Palatino,Georgia,serif;
+   --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+   --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+ @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14130f;--panel:#1b1a16;--line:#332f28;
+   --ink:#e8e3d8;--dim:#a49c8e;--faint:#7d7466;--seal:#c9a25f;--accent:#7bbfa7}}
+ :root[data-theme="dark"]{--bg:#14130f;--panel:#1b1a16;--line:#332f28;--ink:#e8e3d8;--dim:#a49c8e;
+   --faint:#7d7466;--seal:#c9a25f;--accent:#7bbfa7}
+ *{box-sizing:border-box}html,body{margin:0}
+ body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.66}
+ .wrap{max-width:44rem;margin:0 auto;padding:0 1.25rem 5rem}
+ a{color:var(--accent)}
+ header{padding:3rem 0 1.5rem;border-bottom:2px solid var(--line)}
+ .kicker{font-family:var(--sans);font-size:.7rem;letter-spacing:.19em;text-transform:uppercase;
+   color:var(--seal);font-weight:700;margin:0 0 .85rem}
+ h1{font-size:clamp(1.9rem,5.5vw,2.7rem);line-height:1.13;margin:0 0 .6rem;letter-spacing:-.015em;text-wrap:balance}
+ .sub{color:var(--dim);font-size:1.08rem;margin:0;text-wrap:balance}
+ .seal{margin:1.6rem 0 0;border:1px solid var(--line);border-left:3px solid var(--seal);
+   background:var(--panel);border-radius:0 7px 7px 0;padding:.85rem 1.1rem;font-family:var(--sans);font-size:.83rem;color:var(--dim)}
+ .seal b{color:var(--ink)}
+ .seal dl{display:grid;grid-template-columns:auto 1fr;gap:.3rem .9rem;margin:0}
+ .seal dt{color:var(--faint);text-transform:uppercase;letter-spacing:.1em;font-size:.66rem;padding-top:.18rem}
+ .seal dd{margin:0}
+ article{padding-top:.6rem}
+ article h1,article h2{font-size:1.42rem;margin:2.4rem 0 .7rem;line-height:1.25;letter-spacing:-.01em;
+   padding-bottom:.3rem;border-bottom:1px solid var(--line);text-wrap:balance}
+ article h3{font-size:1.13rem;margin:1.9rem 0 .5rem}
+ article h4,article h5,article h6{font-size:.98rem;margin:1.5rem 0 .4rem;font-family:var(--sans)}
+ article p{margin:.85rem 0}
+ article ul,article ol{margin:.85rem 0;padding-left:1.5rem}article li{margin:.3rem 0}
+ blockquote{margin:1.1rem 0;padding:.15rem 0 .15rem 1.1rem;border-left:3px solid var(--line);color:var(--dim);font-style:italic}
+ hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
+ code{font-family:var(--mono);font-size:.86em;background:var(--panel);border:1px solid var(--line);
+   border-radius:4px;padding:.08em .34em}
+ .code{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:.9rem 1rem;
+   overflow-x:auto;font-size:.76rem;line-height:1.45}
+ .code code{background:none;border:0;padding:0;font-size:inherit;white-space:pre}
+ .note{font-family:var(--sans);font-size:.81rem;color:var(--faint);border:1px dashed var(--line);
+   border-radius:7px;padding:.7rem .95rem;margin:2rem 0 0}
+ footer{margin-top:3rem;padding-top:1.6rem;border-top:2px solid var(--line);font-family:var(--sans);font-size:.83rem;color:var(--dim)}
+ footer h2{font-size:.7rem;letter-spacing:.19em;text-transform:uppercase;color:var(--faint);margin:0 0 .8rem;border:0;padding:0}
+ .sibs{list-style:none;margin:0 0 1.6rem;padding:0;display:grid;gap:.45rem}
+ .sibs a{text-decoration:none;display:block;border:1px solid var(--line);background:var(--panel);
+   border-radius:7px;padding:.6rem .85rem}
+ .sibs a:hover{border-color:var(--seal)}
+ .sibs .t{color:var(--ink);font-weight:600}.sibs .m{color:var(--faint);font-size:.76rem;font-variant-numeric:tabular-nums}
+</style></head><body><div class="wrap">
+<header>
+ <p class="kicker">Defensive publication · prior art</p>
+ <h1>Diagnostic Braid</h1>
+ <p class="sub">Health issues as misalignment between structure, flow and control</p>
+ <div class="seal"><dl>
+  <dt>Disclosed</dt><dd><b>8 January 2026</b> — first commit 2026-01-08 15:20:50 UTC</dd>
+  <dt>Rights</dt><dd>Public domain / CC0 (concept)</dd>
+  <dt>Record</dt><dd><a href="https://github.com/sjgant80-hub/diagnostic-braid">github.com/sjgant80-hub/diagnostic-braid</a> — the commit history is the timestamp</dd>
+ </dl></div>
+</header>
+<article>
+<h1>probable-telegram</h1>
+<p>Diagnostic Braid is an open-source diagnostic architecture that detects health issues as misalignments among structural, flow, and control signals, using local-first wearable data, explicit coupling metrics, and interpretable “braid fault” signatures.</p>
+<p>Defensive Publication (Public Domain): Diagnostic Braid</p>
+<p>An open-source, multi-signal diagnostic framework that treats the body as a braided network of rhythms, states, and constraints.</p>
+<p>Status: speculative, implementable with commodity sensors + open protocols.</p>
+<p>License intent: public domain / CC0 (concept).</p>
+<ol start="1">
+<li>Core Idea</li>
+</ol>
+<p>Most diagnostics collapse reality into a single channel (one lab value, one image, one score). The Diagnostic Braid keeps signals separate and linked: it models health as three interwoven strands that continuously constrain each other:</p>
+<p>Strand A — Structure (where)</p>
+<p>Anatomy, morphology, tissue integrity: imaging, anthropometrics, dermal patterns, edema markers.</p>
+<p>Strand B — Flow (how it moves)</p>
+<p>Hemodynamics, respiration, perfusion, lymph, gut motility: PPG, ECG, BP, respiratory belt, capnography, impedance.</p>
+<p>Strand C — Control (how it regulates)</p>
+<p>Neuroendocrine + immune regulation: HRV, temperature rhythms, sleep staging, cytokine proxies, glucose dynamics, stress markers.</p>
+<p>Claim: Many conditions are not “one abnormal number” but a braid fault: structure–flow–control fall out of phase.</p>
+<ol start="2">
+<li>What Makes It a “Braid”</li>
+</ol>
+<p>A braid is not just three lines—it’s crossovers. The braid representation is built from relationships:</p>
+<p>Phase coupling: does temperature rhythm align with sleep and HRV?</p>
+<p>Latency: does stress spike precede glucose variability by a consistent delay?</p>
+<p>Compensation: does heart rate rise to maintain perfusion when BP drifts?</p>
+<p>Divergence: does subjective fatigue rise while objective recovery markers improve?</p>
+<p>So the Diagnostic Braid outputs not just “high/low,” but misalignment signatures.</p>
+<ol start="3">
+<li>Minimal Open Sensor Set</li>
+</ol>
+<p>You can implement a useful braid with cheap hardware:</p>
+<p>Tier 0 (phone + watch):</p>
+<p>PPG (heart rate + pulse wave), accelerometer (activity), microphone (breath/voice), camera (skin, cap refill), thermometer (if available).</p>
+<p>Tier 1 (maker-grade):</p>
+<p>Single-lead ECG, cuff BP, pulse oximetry, temp patch, respiratory belt.</p>
+<p>Tier 2 (home labs if available):</p>
+<p>Glucose (CGM or fingerstick), urine strips, CRP or similar point-of-care assays (optional).</p>
+<p>The braid is designed to degrade gracefully: fewer sensors = fewer crossovers, but still usable.</p>
+<ol start="4">
+<li>Data Model (Open Schema)</li>
+</ol>
+<p>Represent everything as events + streams + context.</p>
+<p>Streams</p>
+<p>Time series with sampling rate and confidence:</p>
+<p>ECG, PPG, SpO2, Temp, BP, Resp, Actigraphy, Sleep, Glucose (optional)</p>
+<p>Events</p>
+<p>Sparse occurrences:</p>
+<p>meals, meds, exercise sessions, symptoms, stressors, menstrual cycle phase, infections, travel/jet lag</p>
+<p>Context</p>
+<p>Static or slowly changing:</p>
+<p>age range, sex at birth (if provided), known conditions, baseline fitness, altitude, typical schedule</p>
+<p>Derived Features (standardized)</p>
+<p>HRV (RMSSD, SDNN), respiratory rate stability, nocturnal dipping, circadian amplitude, glucose variability, pulse transit time proxies, sleep fragmentation, temperature slope at bedtime.</p>
+<p>Key: every derived feature has provenance: which sensors, window, and quality score produced it.</p>
+<ol start="5">
+<li>The Braid Engine</li>
+</ol>
+<p>A simple, open algorithmic spine:</p>
+<p>Step 1 — Build a Baseline “Personal Physics”</p>
+<p>Instead of population norms, learn a personal reference manifold over 2–4 weeks:</p>
+<p>typical circadian phase</p>
+<p>typical recovery dynamics after exertion</p>
+<p>typical meal-response curves</p>
+<p>typical sleep architecture</p>
+<p>Step 2 — Compute Crossovers (Couplings)</p>
+<p>For each pair/triple of features, compute:</p>
+<p>correlation under lag (0–48h)</p>
+<p>phase coherence (circadian alignment)</p>
+<p>conditional dependence (does A predict B when C is controlled?)</p>
+<p>compensation index (does system push one knob to stabilize another?)</p>
+<p>Step 3 — Detect Braid Faults</p>
+<p>A braid fault is a stable, multi-crossover anomaly, e.g.:</p>
+<p>Control–Flow decoupling: high sympathetic tone + falling perfusion proxies</p>
+<p>Flow–Structure strain: rising BP variability + swelling/edema signatures</p>
+<p>Control–Structure mismatch: inflammatory proxy pattern + unchanged load metrics but collapsing sleep</p>
+<p>Step 4 — Explain in Human Terms (Open, Non-Medical)</p>
+<p>Output:</p>
+<p>“What changed” (features)</p>
+<p>“What’s misaligned” (crossovers)</p>
+<p>“What might it indicate” (hypotheses, not diagnoses)</p>
+<p>“What to measure next” (lowest-cost confirmatory signals)</p>
+<ol start="6">
+<li>Output Format: The “Braid Card”</li>
+</ol>
+<p>A standard, shareable artifact:</p>
+<p>(A) Alignment Map</p>
+<p>Circadian: aligned / drifting / inverted</p>
+<p>Recovery: adequate / strained / unstable</p>
+<p>Perfusion: stable / compensating / failing-to-compensate</p>
+<p>Respiratory: stable / obstructed pattern / hyperventilation pattern</p>
+<p>Metabolic: stable / volatile / delayed recovery after meals</p>
+<p>(B) Fault Signatures (ranked)</p>
+<p>Each includes confidence + evidence:</p>
+<p>Signature name (e.g., “Sympathetic Lock + Sleep Fragmentation”)</p>
+<p>Evidence: HRV down, temp elevated, sleep fragmentation up, delayed recovery</p>
+<p>Suggested checks: hydration/BP check, infection screen, stressor audit, etc.</p>
+<p>(C) Red-Flag Gate (Safety)</p>
+<p>If certain combinations appear (e.g., low SpO2 + tachycardia + chest pain event tag), the system stops and advises urgent care. (This is essential for responsible open tooling.)</p>
+<ol start="7">
+<li>Validation Path (Open Science)</li>
+</ol>
+<p>Phase 1: Self-consistency</p>
+<p>Does the engine reproduce baseline patterns day-to-day?</p>
+<p>Does it react appropriately to known perturbations (exercise, jet lag)?</p>
+<p>Phase 2: Known-condition cohorts (voluntary, privacy-preserving)</p>
+<p>Compare braid faults with known labels (sleep apnea, POTS, anemia, infection recovery)</p>
+<p>Measure prediction of change (onset/flare/recovery), not just classification.</p>
+<p>Phase 3: Interventional checks</p>
+<p>Do suggested measurements reduce uncertainty?</p>
+<p>Does a recommended action (sleep regularity, hydration, meal timing) shift the braid toward alignment?</p>
+<ol start="8">
+<li>Privacy + Governance (Non-Negotiables)</li>
+</ol>
+<p>Local-first computation by default.</p>
+<p>Federated learning optional; no raw data sharing.</p>
+<p>Differential privacy for aggregated research outputs.</p>
+<p>Auditability: every inference must cite the features and windows used.</p>
+<p>No insurance/employer mode. Explicit license discouraging coercive deployment.</p>
+<ol start="9">
+<li>Open Modules You Can Build Immediately</li>
+</ol>
+<p>Braid Logger: a mobile app that ingests wearables + events</p>
+<p>Braid Feature Library: canonical open implementations of HRV, circadian metrics, sleep fragmentation, etc.</p>
+<p>Crossover Kernel: lagged coupling, phase coherence, compensation indices</p>
+<p>Braid Card Generator: interpretable output + red-flag gate</p>
+<p>Synthetic Patient Simulator: generates plausible signals + faults for testing</p>
+<ol start="10">
+<li>Example: A Braid Fault in Plain Language</li>
+</ol>
+<p>Scenario: user feels “wired but tired” for 10 days.</p>
+<p>HRV down, resting HR up</p>
+<p>bedtime temp not dropping</p>
+<p>sleep fragmentation up</p>
+<p>activity unchanged</p>
+<p>meals cause bigger glucose spikes than baseline</p>
+<p>Braid interpretation: Control strand stuck “high,” pushing Flow to compensate, disrupting circadian Structure maintenance.</p>
+<p>Next cheapest checks: hydration/BP, infection symptom log, sleep timing consistency, maybe CRP if available.</p>
+<p>Red flags: add SpO2/respiratory checks if nighttime awakenings are frequent.</p>
+</article>
+
+<footer>
+ <h2>The rest of the set</h2>
+ <ul class="sibs">
+  <li><a href="https://sjgant80-hub.github.io/open-source-diagnostic-braid/"><span class="t">Open-Source Diagnostic Braid</span>
+   <span class="m">Diagnostics · 7 January 2026</span></a></li>
+  <li><a href="https://sjgant80-hub.github.io/kinetic-braid-prior-art/"><span class="t">The Kinetic Braid</span>
+   <span class="m">Physics-aware AI · 7 January 2026</span></a></li>
+  <li><a href="https://sjgant80-hub.github.io/thrl-harmonic-energy-loop/"><span class="t">Toroidal Harmonic Regenerative Loop</span>
+   <span class="m">Energy · 8 January 2026</span></a></li>
+  <li><a href="https://sjgant80-hub.github.io/mycelial-cognition-architecture/"><span class="t">Mycelial Cognition Architecture</span>
+   <span class="m">Cognition · 8 January 2026</span></a></li>
+  <li><a href="https://sjgant80-hub.github.io/stigmergic-governance-mesh/"><span class="t">Planetary Stigmergic Governance Mesh</span>
+   <span class="m">Cognition · 8 January 2026</span></a></li>
+  <li><a href="https://sjgant80-hub.github.io/thrl-regenerative-schematic/"><span class="t">Closed-Loop Harmonic Energy Schematic</span>
+   <span class="m">Energy · 9 January 2026</span></a></li>
+  <li><a href="https://sjgant80-hub.github.io/mycelial-cognition-braided/"><span class="t">Mycelial Cognition, Braided</span>
+   <span class="m">Cognition · 9 January 2026</span></a></li>
+  <li><a href="https://sjgant80-hub.github.io/policy-phi-fighter/"><span class="t">Policy-Phi Fighter</span>
+   <span class="m">Consumer tool · 9 January 2026</span></a></li>
+  <li><a href="https://sjgant80-hub.github.io/clhes-harmonic-energy-system/"><span class="t">Closed-Loop Harmonic Energy System</span>
+   <span class="m">Energy · 21 January 2026</span></a></li>
+ </ul>
+ <p>Published as prior art so these ideas stay buildable by anyone. This page is generated from the
+ repository's own README — it re-presents the filing, it does not restate it.</p>
+</footer>
+</div></body></html>
